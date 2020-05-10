@@ -1,13 +1,69 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background: linear-gradient(to bottom right, #ffffff 0%, #999966 100%);
+  }
+
+
+
+/* Title.js */
+.title{
+  background: linear-gradient(to bottom right, #ff99ff 0%, #33ccff 100%);
+  height: 80vh;
+  box-shadow: 0 10px 6px -6px #f8f8ff;
+  text-align: center;
+  margin: 0;
+  padding: 75px;
+  color: #f8f8ff;
+  font-weight: bold;
+  text-shadow: 4px 7px 9px #191919;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 3em;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 2.25em;
+}
+
+h3{
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 1.25em;
+}
+
+
+
+
+
+/* Scroll Bar CSS */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
