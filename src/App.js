@@ -5,19 +5,16 @@ import Ticker from './Components/Ticker';
 import Slider from './Containers/Slider';
 import Navigator from './Components/Navigator';
 import Header from './Components/Header';
-import One from './Components/One';
+import Content from './Components/Content';
+import data from './data/content';
 
 class App extends React.Component{
   constructor(){
     super()
     this.state = {
       navigator: 1,
-      max: 0
+      max: Object.keys(data).length
     }
-  }
-
-  setRangeMaxValue = (value) => {
-    this.setState({max: parseInt(value)})
   }
 
   sliderRangeChange = (e) => {
@@ -26,13 +23,12 @@ class App extends React.Component{
 
   onClickDot = (e) => {
     this.setState({ navigator: parseInt(e.target.getAttribute("value"))}, () => {
-      console.log("Click Dot", this.state)
       document.querySelector(".slider").value = this.state.navigator
     })
   }
 
   onClickRight = (e) => {
-    if(this.state.navigator !== 12){
+    if(this.state.navigator !== this.state.max){
       this.setState((state) => {
         return {navigator: state.navigator + 1}
       }, () => {
@@ -51,7 +47,6 @@ class App extends React.Component{
     }
   }
 
-
   render(){
     return(
       <div className="App">
@@ -59,9 +54,16 @@ class App extends React.Component{
         <Header/>
         <TickerYear />
         <Ticker />
-        <Slider navigator={this.state.navigator} onSliderChange={this.sliderRangeChange} setMax={this.setRangeMaxValue}/>
+        <Slider navigator={this.state.navigator} onSliderChange={this.sliderRangeChange} max={this.state.max}/>
         <Navigator navigator={this.state.navigator} max={this.state.max} clickDot={this.onClickDot} clickRight={this.onClickRight} clickLeft={this.onClickLeft}/>
-        <One navigator={this.state.navigator}/>
+        <Content
+          navigator={this.state.navigator}
+          header={data[this.state.navigator].header}
+          summary={data[this.state.navigator].summary}
+          goal={data[this.state.navigator].goal}
+          accomplishments={data[this.state.navigator].accomplishments}
+          url={data[this.state.navigator].url}
+        />
       </div>
     )
   }
