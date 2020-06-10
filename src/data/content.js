@@ -1,16 +1,16 @@
 const data = {
   1: {
     header: "July 2018",
-    summary: "Summary of this timeframe",
-    goal: ["Goal 1", "Goal 2", "Goal 3"],
-    accomplishments: ["Accomplished 1", "Accomplished 2", "Accomplished 3"],
+    summary: "Moving from Calgary to Toronto, quitting my 9 to 5 job to pursue new career opportunities in a new city.",
+    goal: ["Settle in Toronto and find Sustainable living", "Find part-time or full-time employment while looking for new career opportunities", "Complete Udacity's Front-end Web Developer Nanodegree Program"],
+    accomplishments: ["Moving to Toronto", "Enrolling into Udacity's Front-end Web Developer Course", "Quitting my 9 to 5 job to pursue new opportunities"],
     url: "assets/yyc-yyz.png"
   },
   2: {
     header: "December 2018",
-    summary: "Summary of this timeframe",
-    goal: ["Goal 1", "Goal 2", "Goal 3"],
-    accomplishments: ["Accomplished 1", "Accomplished 2", "Accomplished 3"],
+    summary: "Finding sustainable living in Toronto and continuing my journey to learning a new skill set",
+    goal: ["Continue learning and improving my skills as a front-end web developer", "Learning a new programming langauge", "Finding new line of work with higher pay"],
+    accomplishments: ["Completed Udacity's Front-end Web Developer Nanodegree program", "Settled down in Toronto", "Work part-time in the retail industry"],
     url: "assets/frontend.jpg"
   },
   3: {
