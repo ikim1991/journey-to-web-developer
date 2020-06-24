@@ -17,7 +17,9 @@ class Content extends React.Component{
                 </div>
                 <div className="content-text">
                   <h3>{`Summary of ${this.props.header}:`}</h3>
-                  <ul><li>{this.props.summary}</li></ul>
+                  <ul>
+                    {this.props.summary.map((sum, ind) => <li key={ind}>{sum}</li>)}
+                  </ul>
                   <h3>My Goals:</h3>
                   <ul>
                     {this.props.goal.map((goal, ind) => <li key={ind}>{goal}</li>)}
@@ -33,7 +35,9 @@ class Content extends React.Component{
               <div className="content-main">
                 <div className="content-text">
                   <h3>{`Summary of ${this.props.header}:`}</h3>
-                  <ul><li>{this.props.summary}</li></ul>
+                  <ul>
+                    {this.props.summary.map((sum, ind) => <li key={ind}>{sum}</li>)}
+                  </ul>
                   <h3>My Goals:</h3>
                   <ul>
                     {this.props.goal.map((goal, ind) => <li key={ind}>{goal}</li>)}
