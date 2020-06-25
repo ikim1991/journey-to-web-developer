@@ -12,7 +12,7 @@ class App extends React.Component{
   constructor(){
     super()
     this.state = {
-      navigator: 1,
+      navigator: 6,
       max: Object.keys(data).length
     }
   }
